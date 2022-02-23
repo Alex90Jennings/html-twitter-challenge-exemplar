@@ -1,0 +1,40 @@
+.right {
+  padding: var(--side-padding);
+}
+
+.search-section {
+  padding: 8px 10px;
+  background-color: var(--primary-transparent);
+  border-radius: 20px;
+
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+.search-section .search-icon {
+  width: 20px;
+  fill: var(--primary);
+}
+
+.search-section .search {
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+}
+
+.search-section .search:focus {
+  outline: none;
+}
+
+.right .widget {
+  background-color: var(--primary-transparent);
+  margin: 13px 0;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.right .widget .title {
+  font-size: 1.2rem;
+  padding: 0 var(--side-padding) 10px var(--side-padding);
+  border-bottom: solid 1px var(--primary-transparent);
+}

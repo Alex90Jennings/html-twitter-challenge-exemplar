@@ -1,0 +1,196 @@
+.main {
+  border-left: solid 1px var(--primary-transparent);
+  border-right: solid 1px var(--primary-transparent);
+}
+
+/* Pre flams */
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 1fr 20px;
+
+  padding: 3px var(--side-padding);
+  border-bottom: solid 1px var(--primary-transparent);
+}
+
+.top-bar .icon {
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+  width: 25px;
+
+  fill: var(--primary);
+}
+
+.top-bar .icon:hover {
+  background-color: var(--primary-transparent);
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.top-bar .title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 10px 0;
+}
+
+.create-flam {
+  padding: 10px var(--side-padding);
+  padding-bottom: 0;
+}
+
+.create-flam form {
+  display: grid;
+  grid-template:
+    "new-flam-avatar-section new-flam-textarea-section" 50px
+    "new-flam-avatar-section new-flam-actions-section" 55px /
+    60px 1fr;
+}
+
+.create-flam .avatar-section {
+  grid-area: new-flam-avatar-section;
+}
+
+.create-flam .textarea-section {
+  grid-area: new-flam-textarea-section;
+}
+
+.create-flam .actions-section {
+  grid-area: new-flam-actions-section;
+
+  display: grid;
+  grid-template-columns: 1fr 80px;
+}
+
+.create-flam .avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.create-flam .content {
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: solid 1px var(--primary-transparent);
+  resize: none;
+}
+
+.create-flam .content:focus {
+  outline: none;
+}
+
+.create-flam .actions-section {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+}
+
+.create-flam .actions-section .action-icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  fill: var(--primary);
+  padding: 5px;
+}
+
+.create-flam .actions-section .action-icon:hover {
+  background-color: var(--primary-transparent);
+  border-radius: 50%;
+}
+
+.create-flam .flam {
+  text-align: center;
+  padding: 10px 0;
+
+  border: none;
+  border-radius: 100px;
+  background-color: var(--primary);
+
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--white);
+
+  width: 80px;
+
+  transition: 100ms;
+}
+
+.create-flam .flam:hover {
+  background-color: var(--primary-darker);
+}
+
+.space {
+  height: 10px;
+  background-color: var(--primary-transparent);
+}
+
+/* Flams */
+.main .flams .flam {
+  padding: 10px var(--side-padding);
+
+  display: grid;
+  grid-template:
+    "flam-avatar-section flam-content-section" minmax(60px, 1fr)
+    "flam-avatar-section flam-actions-section" 25px /
+    60px 1fr;
+}
+
+.main .flams .flam .avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.main .flams .flam .avatar-section {
+  grid-area: flam-avatar-section;
+}
+
+.main .flams .flam .content-section {
+  grid-area: flam-content-section;
+}
+
+.main .flams .flam .actions-section {
+  grid-area: flam-actions-section;
+}
+
+.main .flams .flam {
+  cursor: pointer;
+  font-size: 0.95rem;
+  border-bottom: solid 1px var(--primary-transparent);
+  transition: 100ms;
+}
+
+.main .flams .flam:hover {
+  background-color: var(--primary-transparent-more);
+}
+
+.main .flams .flam .name {
+  margin-bottom: 5px;
+}
+
+.main .flams .flam .display-name {
+  font-weight: 800;
+}
+
+.main .flams .flam .user-name,
+.main .flams .flam .time {
+  font-weight: 400;
+  color: #888888;
+}
+
+.main .flams .flam .actions-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main .flams .flam .action-icon {
+  cursor: pointer;
+  width: 18px;
+  fill: #888888;
+  padding: 6px;
+}
+
+.main .flams .flam .action-icon:hover {
+  fill: var(--primary);
+  background-color: var(--primary-transparent);
+  border-radius: 50%;
+}

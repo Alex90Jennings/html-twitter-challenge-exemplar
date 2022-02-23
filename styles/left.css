@@ -1,0 +1,74 @@
+.left {
+  padding: 10px 5px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+
+  font-size: 3rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.logo:hover {
+  background-color: var(--primary-transparent);
+}
+
+.menu-item {
+  display: block;
+  font-weight: 800;
+  font-size: 1.2rem;
+
+  margin: 15px 0;
+}
+
+.menu-item .menu-icon {
+  width: 28px;
+  margin-right: 20px;
+  fill: currentColor;
+}
+
+.menu-item .menu-icon:hover {
+  fill: currentColor;
+  color: var(--primary);
+}
+
+.menu-item a {
+  padding: 10px 20px 10px 10px;
+  color: var(--black);
+  text-decoration: none;
+
+  border-radius: 100px;
+
+  display: inline-flex;
+  place-items: center;
+
+  transition: 100ms;
+}
+
+.menu-item a:hover {
+  color: var(--primary);
+  background-color: var(--primary-transparent);
+}
+
+.menu-item.active a {
+  color: var(--primary);
+}
+
+.flam-btn {
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 100px;
+  background-color: var(--primary);
+
+  font-weight: 800;
+  color: var(--white);
+
+  transition: 100ms;
+}
+
+.flam-btn:hover {
+  background-color: var(--primary-darker);
+}
